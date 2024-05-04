@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    tools:context=".MainActivity2">
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                layout="@layout/toolbar"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to GamePedia"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Explore the world of video games with Game-pedia. Get detailed information about your favorite games and read reviews from our community."
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Featured Games"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <androidx.cardview.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card1"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:id="@+id/listImage2"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/spider"
+                        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+                    <TextView
+                        android:id="@+id/listName2"
+                        android:layout_width="350dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="180dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Marvel's Spider-Man 2"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="220dp"
+                        android:justificationMode="inter_word"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Spider-Men, Peter Parker and Miles Morales, return for an exciting new adventure in Marvel's Spider-Man franchise for PS5. Swing, jump and utilize the new Web Wings to travel across Marvel's New York, quickly switching between Peter Parker and Miles Morales to experience different stories and epic new powers, as the iconic villain Venom threatens to destroy their lives, their city and the ones they love. The incredible power of the symbiote forces Peter and Miles to face the ultimate test of strength, both inside and outside the mask, as they balance their lives, friendships and their duty to protect those in need. Quickly swap between both Spider-Men as you explore an expanded Marvel's New York. Fight against a variety of new and iconic villains, including an original take on the monstrous Venom, the ruthless Kraven the Hunter, the volatile Lizard and many more. Explore a larger Marvel's New York than ever before, featuring two new boroughs - Brooklyn and Queens - as well as locations like Coney Island and more"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:id="@+id/card2"
+                android:layout_marginVertical="10dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:id="@+id/listImage"
+                        android:scaleType="centerCrop"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:src="@drawable/mario"
+                        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"/>
+
+                    <TextView
+                        android:id="@+id/listName"
+                        android:layout_width="350dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="180dp"
+                        android:layout_marginLeft="20dp"
+                        android:text="Super Mario Bros Wonder"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="220dp"
+                        android:justificationMode="inter_word"
+                        android:layout_marginHorizontal="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:text="Mario, Luigi, Princess Peach, Princess Daisy and an entourage of Toads and Yoshis are invited to the neighboring Flower Kingdom by its ruler, Prince Florian, to see a demonstration of a Wonder Flower; great treasures of the Flower Kingdom that can warp reality. Bowser interrupts the ceremony and seizes the Wonder Flower, using its power to merge with Prince Florian's castle, turning himself into a giant flying fortress and imprisoning the citizens of the Flower Kingdom. Mario volunteers to help Prince Florian defeat Bowser and restore order to the land, with his friends following suit. Prince Florian accompanies the party, wearing badges that enhance the group's abilities. As Mario, Prince Florian, and the gang work to collect the Wonder Seeds and save the captured Poplins, they realize that by gathering six Royal Seeds, which are considered precious treasures in the Flower Kingdom, they will grant access to Castle Bowser, as each time a Royal Seed is collected, it destroys one of the six Cloud Piranhas protecting Castle Bowser."
+                        />
+
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Game Reviews"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read reviews from our community about the latest and greatest video games."
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:layout_marginHorizontal="8dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_gravity="start">
+        <include
+            layout="@layout/nav_header"/>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

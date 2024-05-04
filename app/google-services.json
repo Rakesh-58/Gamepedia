@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1013018346657",
+    "firebase_url": "https://tour-a5579-default-rtdb.firebaseio.com",
+    "project_id": "tour-a5579",
+    "storage_bucket": "tour-a5579.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013018346657:android:cc92b4a63db19120ee9ce0",
+        "android_client_info": {
+          "package_name": "com.example.gamepedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013018346657-p8d19ggnemqbfibh466o6k5vvvfojrsj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdzCILX3YfJvMJJKyOPkm_AL6FBGnMPGE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013018346657-p8d19ggnemqbfibh466o6k5vvvfojrsj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
